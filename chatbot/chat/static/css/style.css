@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    background-image: url(images/landing.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    position: relative;
+}
+.navbar{
+    width: 100%;
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 160px;
+    cursor: pointer;
+}
+.logo{
+    width: 160px;
+    cursor: pointer;
+}
+nav{
+    flex: 1;
+    padding-left: 60px;
+    
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 20px;
+    float: right;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #333;
+    
+}
+.content h1{
+    font-size:60px;
+    font-weight:100;
+    margin-top: 24px;
+    margin-bottom: 20px;
+    color: #232d60;
+}
+.content p{
+    font-size:20px;
+    color: #6a7199;
+}
+.content{
+    margin: 10% 0 0 10%;
+}
+.content .btn{
+    display: inline-block;
+    background:linear-gradient(45deg, #87adfe, #ff77cd);
+    border-radius:6px;
+    padding:10px 20px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color:#fff;
+    box-shadow: 3px 8px 22px rgba(94,28,60,0.15);
+}
+.mainContainer{
+    position: absolute;
+    margin: -20% 50px 20px 60%;
+}
+
+.fcontainer{
+    position: relative;
+    padding: 50px;
+    width: 260px;
+    min-height: 380px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+    padding-top: 100px;
+}
+.fcontainer::after{
+    content: '';
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    left: 5px;
+    border-radius: 20px;
+    pointer-events: none;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 2%);
+}
+.form h1{
+    letter-spacing: 2px;
+    margin: 0px 0px 40px 10px;
+}
+.form .inputBx{
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.form .inputBx input{
+    width: 80%;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.2);
+    padding: 8px 10px 8x 40px;
+    border-radius: 22px;
+    font-size: 16px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+.form .inputBx img{
+    position: absolute;
+    top: -3px;
+    left: 2px;
+    transform: scale(0.4);
+    filter: invert(1);
+}
+.form .inputBx input[type=submit]{
+    background: #fff;
+    color: #111;
+    max-width: 100px;
+    padding: 8px 10px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    outline: none;
+    border: 0.3px solid rgba(255, 255, 255, 0.582);
+}
+.form .inputBx input[type=submit]:hover{
+    background: linear-gradient(115deg, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.25));
+    color: #fff;
+}
+.form .inputBx span{
+    position: absolute;
+    left: 30px;
+    display: inline-block;
+    pointer-events: none;
+}
+.form .inputBx input:focus ~ span,
+.form .inputBx input:valid ~ span{
+    transform: translateX(-30px) translateY(-33px);
+    font-size: 12px;
+}
+form#popupForm{
+    margin-top: 100px;
+}
+.lgnbtn{
+    text-decoration: none;
+    color: black;
+    background-color:white;
+    padding: 9px 25px 9px 25px;
+    border-radius:20px;
+
+}

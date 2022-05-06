@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+{%load static%}
+<head>
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    <script>
+        function openForm() {
+          document.getElementById("loginPopup").style.display = "block";
+        }
+    
+        function closeForm() {
+          document.getElementById("loginPopup").style.display = "none";
+        }
+        window.onclick = function(event) {
+          let modal = document.getElementById('loginPopup');
+          if (event.target == modal) {
+            closeForm();
+          }
+        }
+      </script>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#" >About</a></li>
+                    <li><a href="/login/" onclick="openForm()">Login</a></li>
+                    <li><a href="/index/">Home</a></li>
+                </ul>
+            </nav>
+            <img src="" class="logo">
+        </div>
+        <div class="content">
+            <button class="btn" onclick="openForm()"><a>E-Government Portal</a></button>
+            <h1>Everything at your finger tip</h1>
+            <p>Login and access the entire government services</p>
+        </div>
+        <div class="form">
+        <div class="mainContainer" id="popupForm">
+            <div class="fcontainer">
+                
+                    <form action="/user_login/" method="post">
+                        {% csrf_token %}
+                        <div class="inputBx">
+                            <input type="text" name="uname" required>
+                            <span>Username</span>
+                            
+                        </div>
+                        <div class="inputBx">
+                            <input type="password" name="pswd" required>
+                            <span>Password</span>
+                            
+                        </div>
+                        <div class="inputBx">
+            
+                            <input type="Submit"  value="Login">
+                        </div>
+                        <div class="inputBx">   
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function openForm() {
+        document.getElementById("popupForm").style.display = "block";
+      }
+
+      function closeForm() {
+        document.getElementById("popupForm").style.display = "none";
+      }
+</script>
+</html>
+

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+{%load static%}
+<head>
+	<title>E-Government portal</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/indexstyle.css'%}">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+	<div class="header">
+     <div class="navbar">
+         <div class="logo">
+             <!-- <a href="#"><img src="css/images/logo.png"></a> -->
+         </div>
+         <div class="menu">
+             <ul>
+                 <li>Home</li>
+                 <li>About</li>
+                 <li><a href="/login/">Login</a></li>
+                 <li><a href="/register/">Register</a></li>
+                 <li>Contact</li>
+             </ul>
+         </div>
+     </div>   
+
+     <div class="banner">
+         <div class="app-text">
+             <h3>E-Government portal</h3>
+             <h1>Centralised<br>Services</h1>
+             <p>Here we provide centralised services for you.You can simply access entire Government services through this portal</p>
+             <div class="app-picture">
+                <img src="{% static 'css/images/10.jpg'%}">{% static 'static1/css/bootstrap.min.css'%}
+            </div>
+            </div>
+         
+     </div>
+
+     <div class="about-services">
+         <ul>
+             <li>
+                 <img src="{% static 'css/images/namecahnge.png'%}">
+                 <h1>Income Certificate</h1> 
+                 <p>Apply for income certifate through here without extra burden</p>
+             </li>
+             <li>
+                 <img src="{% static 'css/images/namecahnge.png'%}">
+                 <h1>Name Change</h1>
+                 <p>Want to change your name apply here</p>
+             </li>
+             <li>
+                 <img src="{% static 'css/images/namecahnge.png'%}">
+                 <h1>Non Cremiling Certificate</h1>
+                 <p>Apply for non cremiling certificate through here without extra burden</p>
+             </li>
+         </ul>
+     </div>
+     <form>
+     <div class="chat">
+        <a href="/login/"><img src="{% static 'css/images/chat.png'%}"></a>
+     </div>
+    </form>
+    <div class="appform">
+        <div class="formcard">
+            <div class="formcardcontainer">
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

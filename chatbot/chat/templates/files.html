@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>Home page</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+            
+    </head>
+
+    <body>
+
+        <div class="container mt-3">
+            <h2>Upload Files</h2>
+            <form action="/file/" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+              <div class="mb-3 mt-3">
+                <label >Adhaar </label>
+                <input type="file" class="form-control" name="adhaar">
+              </div>
+              <div class="mb-3 mt-3">
+                <label >Pan Card</label>
+                <input type="file" class="form-control" name="pan">
+              </div>
+              <div class="mb-3 mt-3">
+                <label >Voters ID</label>
+                <input type="file" class="form-control" name="voterid">
+              </div>
+              <div class="mb-3 mt-3">
+                <label>Driving License</label>
+                <input type="file" class="form-control" name="drlics">
+              </div>
+              <div class="mb-3 mt-3">
+                <label>Ration Card</label>
+                <input type="file" class="form-control"  name="rcard">
+              </div>
+              <div class="mb-3 mt-3">
+                <label>SSLC</label>
+                <input type="file" class="form-control"  name="sslc">
+              </div>
+              <div class="mb-3 mt-3">
+                <label>Plustwo</label>
+                <input type="file" class="form-control"  name="plustwo">
+              </div>
+              <div class="mb-3 mt-3">
+                <label>Father's SSLC</label>
+                <input type="file" class="form-control"  name="fsslc">
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+          
+
+    </body>
+</html>
