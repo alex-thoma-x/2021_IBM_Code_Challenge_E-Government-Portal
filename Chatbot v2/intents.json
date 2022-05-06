@@ -1,0 +1,34 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hello","Hi there","greetings!","Hola!"],
+         "responses": ["Hello, how can I help you?","Hye"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "Goodbye","See you later","okay, bye"],
+         "responses": ["Have a nice day", "See you!","Bye! pleasure to chat with you"],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "Thanks for the help","That's helpful"],
+         "responses": ["You are welcome","Happy to help!"],
+         "context": ["https://edistrict.kerala.gov.in/"]
+        },
+
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can you repeat?","Sorry, I can't understand you"],
+         "context": [""]
+        },
+        {"tag": "income",
+         "patterns": ["income cerificate", "income", "apply income certificate","salary certificate"],
+         "responses": ["For Applying Income Certificate go to here"],
+         "context": ["https://edistrict.kerala.gov.in/"]
+        },
+        {"tag": "birth",
+         "patterns": ["birth cerificate", "birth", "apply birth certificate","search birth certificate"],
+         "responses": ["For searching Birth Certificate go to here"],
+         "context": ["https://edistrict.kerala.gov.in/"]
+        }
+]
+}
